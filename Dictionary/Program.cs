@@ -25,6 +25,12 @@ namespace Dictionary
                 Console.WriteLine("Öğrenci bulunamadı");
             }
 
+            bool varMi = ogrenci.ContainsKey(28);
+            bool varMi2 = ogrenci.ContainsValue("Hakan");
+            //ogrenci.Clear(); -> tüm anahtar-değer çiftlerini siler
+            int elemanSayisi = ogrenci.Count;
+            //bool silindiMi = ogrenci.Remove(28); ->28 anahtarı varsa siler ve true döndürür yoksa false döndürür
+
         }
     }
 }
